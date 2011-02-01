@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Log in</title>
+  <link href="WADproject1.css" rel="stylesheet" type="text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js">
+</script>
+
+<script>
+
+$(document).ready(function(){
+
+        //Hide (Collapse) the toggle containers on load
+        $('#slidetoggle').hide(); 
+
+$("#trigger").click(function () {
+      $("#slidetoggle").slideToggle("fast");
+    });
+
+    });
+</script>
+
+  </head>
+  <body>
+<div id="container"
+
+<h1>
+Go ahead & log in, so you can join the fun!</h1>
+<p>This is a page with a log in form that hides out of the way. It uses the jQuery 'toggle' effect.</p>
+<p id="trigger">Click here to log in</p>
+<form>
+<fieldset id="slidetoggle">
+<label for "email">What's your email address?</label>
+<input id="email" name="email" type="text" placeholder="someone_awesome@somewhere.rad" />
+<label for "password">Type in that password whydon'tcha?</label>
+<input id="password" name="password" type="password" />
+<input class="submit" type="submit" value="Hit me!" />
+</fieldset>
+</form>
+</div>
+  </body>
+</html>
+
